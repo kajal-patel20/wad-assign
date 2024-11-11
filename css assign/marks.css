@@ -1,0 +1,49 @@
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+.marks {
+display: flex;
+justify-content: space-evenly;
+}
+.marks10th,
+.marks12th {
+display: flex;
+width: 50%;
+flex-direction: column;
+align-items: center;
+}
+.marks10th h1,
+.marks12th h1 {
+text-align: center;
+text-transform: uppercase;
+padding: 1rem 0;
+font-size: 2rem;
+}
+.marks10th table,
+.marks12th table {
+width: 100%;
+}
+.marks10th table tr,
+.marks12th table tr {
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+padding: 0.5rem 0;
+}
+.marks10th table tr td,
+.marks12th table tr td {
+width: 50%;
+text-align: center;
+border: 1px solid #000;
+padding: 0.3rem 0;
+}
+.marks10th table tr th,
+.marks12th table tr th {
+text-transform: uppercase;
+padding: 1rem 0;
+width: 50%;
+text-align: center;
+border: 1px solid #000;
+}

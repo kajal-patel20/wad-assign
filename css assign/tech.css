@@ -1,0 +1,23 @@
+.technologies {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.technologies h1 {
+	text-align: center;
+	text-transform: uppercase;
+	padding: 1rem 0;
+	font-size: 2rem;
+}
+
+.technologies dl {
+	display: flex;
+	flex-direction: row;
+	gap: 1rem;
+}
+
+.technologies dl dd {
+	padding: 0.3rem 1rem;
+	border: 1px solid #000;
+}

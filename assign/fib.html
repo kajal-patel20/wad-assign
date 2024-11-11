@@ -1,0 +1,22 @@
+<html>
+<head>
+<title>Fibonacci Series</title>
+</head>
+<body>
+<div class="output"></div>
+<script>
+const output = document.querySelector('.output');
+output.append('\tFibonacci Series using recursion: ');
+output.append('0,1');
+function fib(a, b, n) {
+if (n === 0) {
+return;
+}
+const c = a + b;
+output.append(', ' + c);
+fib(b, c, n - 1);
+}
+fib(0, 1, 8);
+</script>
+</body>
+</html>

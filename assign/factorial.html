@@ -1,0 +1,21 @@
+<html>
+<head>
+<title>Factorial</title>
+</head>
+<body>
+<div class="output"></div>
+<script>
+function factorial(n) {
+if (n == 0) {
+return 1;
+} else {
+return n * factorial(n - 1);
+}
+}
+document.querySelector('.output').innerHTML = factorial(
+parseInt(window.prompt('Enter a number: '))
+);
+</script>
+</body>
+</html>
+

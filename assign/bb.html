@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome And GoodBye</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        display: grid;
+        place-content: center;
+        min-height: 100vh;
+      }
+      .text {
+        font-size: 4rem;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="text"></div>
+    <script>
+      const welcome = "Welcome to my page! 👋";
+      const bye = "GoodBye! 🙋‍♂️";
+      const text = document.querySelector(".text");
+
+      let i = 0,
+        len = welcome.length;
+      const setWelcome = setInterval(() => {
+        let char = welcome[i++];
+        text.textContent += char;
+        if (i === len) {
+          clearInterval(setWelcome);
+            setTimeout(() => {
+                text.textContent = "";
+                let j = 0,
+                len = bye.length;
+                const setBye = setInterval(() => {
+                let char = bye[j++];
+                text.textContent += char;
+                if (j === len) {
+                    clearInterval(setBye);
+                }
+                }, 150);
+            }, 5000);
+        }
+      }, 150);
+
+    </script>
+  </body>
+</html>

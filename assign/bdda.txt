@@ -1,0 +1,11 @@
+1.create a new directory with ur name and in the nested directory.
+2.go inside the directroy
+3.create a file inside that dorectory sample.txt
+4.write two lines using cat command
+5. create a file using touch command and write ur name introduction in it.
+6. display the content in the terminal
+7. append some new content to that file
+8. display the output.
+9.create a new directory with new name2
+9. copy the sample.txt from name1 to name2
+10. delete ur name1 file.
